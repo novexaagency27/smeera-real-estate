@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Requirement Form | S. Meera Real Estate — Anand</title>
+  <meta name="description" content="Share your property requirement with S. Meera Real Estate. Personalized assistance for buying, renting, or selling property across Anand, Vidyanagar, and nearby areas." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-item">
+        <span class="top-bar-dot"></span>
+        <span>Property Search & Consultation Desk</span>
+      </div>
+      <div class="top-bar-item">
+        <span>Direct Line / WhatsApp:</span>
+        <a href="https://wa.me/919737035770" target="_blank" rel="noopener">+91 97370 35770</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="S. Meera Real Estate Home">
+        <img src="assets/logo.svg" alt="S. Meera Real Estate" class="brand-logo" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="requirements.html" class="btn btn-primary btn-sm">
+          <span>Post Your Requirement</span>
+        </a>
+        <a href="https://wa.me/919737035770" target="_blank" rel="noopener" class="btn-header-wa" aria-label="Chat on WhatsApp">
+          <span>WhatsApp</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo.svg" alt="S. Meera Real Estate" style="height: 36px;" />
+      <button class="mobile-drawer-close" aria-label="Close menu">✕</button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="requirements.html" class="mobile-nav-link active">Post Your Requirement <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/919737035770" target="_blank" rel="noopener" class="btn btn-wa btn-full">
+        <span>Chat on WhatsApp</span>
+      </a>
+      <a href="tel:+919737035770" class="btn btn-outline btn-full">
+        <span>Call +91 97370 35770</span>
+      </a>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container-narrow">
+      <!-- Section Header -->
+      <div class="section-header-center">
+        <span class="eyebrow">Direct Broker Assistance</span>
+        <h1 class="section-title">Tell Us What You <em>Need.</em></h1>
+        <p class="section-subtitle">A quick 5-step form to help us understand your exact property requirement in Anand and nearby areas.</p>
+      </div>
+
+      <!-- Step Tracker (01 to 05) -->
+      <div class="step-tracker" aria-label="Form Progress">
+        <div class="step-item active" data-step="1">
+          <span class="step-circle">01</span>
+          <span>Intent</span>
+        </div>
+        <div class="step-divider"></div>
+
+        <div class="step-item" data-step="2">
+          <span class="step-circle">02</span>
+          <span>Property</span>
+        </div>
+        <div class="step-divider"></div>
+
+        <div class="step-item" data-step="3">
+          <span class="step-circle">03</span>
+          <span>Location</span>
+        </div>
+        <div class="step-divider"></div>
+
+        <div class="step-item" data-step="4">
+          <span class="step-circle">04</span>
+          <span>Budget</span>
+        </div>
+        <div class="step-divider"></div>
+
+        <div class="step-item" data-step="5">
+          <span class="step-circle">05</span>
+          <span>Contact</span>
+        </div>
+      </div>
+
+      <!-- Main Step Form Card -->
+      <div class="wizard-card">
+        <form id="property-requirement-form">
+
+          <!-- STEP 1: What are you looking for? -->
+          <div class="wizard-step-pane active" id="step-pane-1">
+            <h2 class="wizard-step-title">What are you looking for?</h2>
+            <p class="wizard-step-desc">Select your primary property objective.</p>
+
+            <div class="options-grid-3" id="step-1-options">
+              <div class="option-choice-card selected" data-value="Buy">
+                <span class="option-choice-title">BUY</span>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Purchase a home, flat, plot, or commercial space</span>
+              </div>
+
+              <div class="option-choice-card" data-value="Rent">
+                <span class="option-choice-title">RENT</span>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Find a rental house, flat, or commercial unit</span>
+              </div>
+
+              <div class="option-choice-card" data-value="Sell">
+                <span class="option-choice-title">SELL</span>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">List your property with broker assistance</span>
+              </div>
+            </div>
+
+            <div class="wizard-nav-bar">
+              <span></span>
+              <button type="button" class="btn btn-primary btn-step-next">
+                <span>Continue →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Property Type -->
+          <div class="wizard-step-pane" id="step-pane-2">
+            <h2 class="wizard-step-title" id="step-2-title">What type of property?</h2>
+            <p class="wizard-step-desc" id="step-2-desc">Select the configuration or property type.</p>
+
+            <!-- Buy / Rent Options -->
+            <div id="step-2-buy-rent-options">
+              <div class="form-group">
+                <label class="form-label">Configuration / Category</label>
+                <div class="chips-group">
+                  <button type="button" class="chip-btn" data-value="1 RK">1 RK</button>
+                  <button type="button" class="chip-btn" data-value="1 BHK">1 BHK</button>
+                  <button type="button" class="chip-btn" data-value="2 BHK">2 BHK</button>
+                  <button type="button" class="chip-btn active" data-value="3 BHK">3 BHK</button>
+                  <button type="button" class="chip-btn" data-value="4 BHK">4 BHK</button>
+                  <button type="button" class="chip-btn" data-value="5 BHK">5 BHK</button>
+                  <button type="button" class="chip-btn" data-value="House / Bungalow">House / Bungalow</button>
+                  <button type="button" class="chip-btn" data-value="Villa">Villa</button>
+                  <button type="button" class="chip-btn" data-value="Plot / Land">Plot / Land</button>
+                  <button type="button" class="chip-btn" data-value="Commercial">Commercial</button>
+                  <button type="button" class="chip-btn" data-value="Other">Other</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sell Options -->
+            <div id="step-2-sell-options" style="display: none;">
+              <div class="form-group">
+                <label class="form-label">Property Type</label>
+                <div class="chips-group" id="sell-type-chips">
+                  <button type="button" class="chip-btn active" data-value="Apartment / Flat">Apartment / Flat</button>
+                  <button type="button" class="chip-btn" data-value="House / Bungalow">House / Bungalow</button>
+                  <button type="button" class="chip-btn" data-value="Villa">Villa</button>
+                  <button type="button" class="chip-btn" data-value="Plot / Land">Plot / Land</button>
+                  <button type="button" class="chip-btn" data-value="Commercial Office">Commercial Office</button>
+                  <button type="button" class="chip-btn" data-value="Shop / Showroom">Shop / Showroom</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Property Status</label>
+                <div class="chips-group" id="sell-status-chips">
+                  <button type="button" class="chip-btn active" data-value="Ready to Move">Ready to Move</button>
+                  <button type="button" class="chip-btn" data-value="Under Construction">Under Construction</button>
+                  <button type="button" class="chip-btn" data-value="Resale">Resale</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="wizard-nav-bar">
+              <button type="button" class="btn btn-outline btn-step-back">
+                <span>← Back</span>
+              </button>
+              <button type="button" class="btn btn-primary btn-step-next">
+                <span>Continue →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Location -->
+          <div class="wizard-step-pane" id="step-pane-3">
+            <h2 class="wizard-step-title">Where are you looking?</h2>
+            <p class="wizard-step-desc">Select your preferred area in Anand and nearby locations.</p>
+
+            <div class="form-group">
+              <label class="form-label">Preferred Area</label>
+              <div class="chips-group" id="location-chips">
+                <button type="button" class="chip-btn active" data-value="Anand">Anand</button>
+                <button type="button" class="chip-btn" data-value="Vidyanagar">Vidyanagar</button>
+                <button type="button" class="chip-btn" data-value="Vallabh Vidyanagar">Vallabh Vidyanagar</button>
+                <button type="button" class="chip-btn" data-value="Karamsad">Karamsad</button>
+                <button type="button" class="chip-btn" data-value="Bakrol">Bakrol</button>
+                <button type="button" class="chip-btn" data-value="Lambhvel">Lambhvel</button>
+                <button type="button" class="chip-btn" data-value="Mogri">Mogri</button>
+                <button type="button" class="chip-btn" data-value="Chikhodra">Chikhodra</button>
+                <button type="button" class="chip-btn" data-value="Boriavi">Boriavi</button>
+                <button type="button" class="chip-btn" data-value="Other">Other Area</button>
+              </div>
+            </div>
+
+            <!-- Other Location Textbox -->
+            <div class="form-group" id="other-location-wrap" style="display: none;">
+              <label class="form-label" for="other-location-input">Specify Area / Colony Name</label>
+              <input type="text" id="other-location-input" class="form-input" placeholder="e.g. Near Ganesh Crossing, Janta Chokdi, Gamdi" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Are you flexible with nearby areas?</label>
+              <div class="chips-group" id="flexible-area-chips">
+                <button type="button" class="chip-btn active" data-value="Yes">Yes</button>
+                <button type="button" class="chip-btn" data-value="No">No, strict area only</button>
+              </div>
+            </div>
+
+            <div class="wizard-nav-bar">
+              <button type="button" class="btn btn-outline btn-step-back">
+                <span>← Back</span>
+              </button>
+              <button type="button" class="btn btn-primary btn-step-next">
+                <span>Continue →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Budget -->
+          <div class="wizard-step-pane" id="step-pane-4">
+            <h2 class="wizard-step-title" id="step-4-title">What is your budget?</h2>
+            <p class="wizard-step-desc" id="step-4-desc">Help us filter suitable price ranges.</p>
+
+            <!-- Buy Budget Box -->
+            <div id="step-4-buy-box">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <div class="form-group">
+                  <label class="form-label" for="buy-budget-min">Minimum Budget</label>
+                  <select id="buy-budget-min" class="form-select">
+                    <option value="₹10 Lakh">₹10 Lakh</option>
+                    <option value="₹25 Lakh" selected>₹25 Lakh</option>
+                    <option value="₹40 Lakh">₹40 Lakh</option>
+                    <option value="₹50 Lakh">₹50 Lakh</option>
+                    <option value="₹75 Lakh">₹75 Lakh</option>
+                    <option value="₹1 Crore">₹1 Crore</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="buy-budget-max">Maximum Budget</label>
+                  <select id="buy-budget-max" class="form-select">
+                    <option value="₹35 Lakh">₹35 Lakh</option>
+                    <option value="₹50 Lakh" selected>₹50 Lakh</option>
+                    <option value="₹75 Lakh">₹75 Lakh</option>
+                    <option value="₹1 Crore">₹1 Crore</option>
+                    <option value="₹1.5 Crore">₹1.5 Crore</option>
+                    <option value="₹2 Crore+">₹2 Crore+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rent Budget Box -->
+            <div id="step-4-rent-box" style="display: none;">
+              <div class="form-group">
+                <label class="form-label">Monthly Rental Budget</label>
+                <div class="chips-group" id="rent-budget-chips">
+                  <button type="button" class="chip-btn" data-value="₹8,000 / mo">₹8,000 / mo</button>
+                  <button type="button" class="chip-btn" data-value="₹12,000 / mo">₹12,000 / mo</button>
+                  <button type="button" class="chip-btn active" data-value="₹15,000 / mo">₹15,000 / mo</button>
+                  <button type="button" class="chip-btn" data-value="₹20,000 / mo">₹20,000 / mo</button>
+                  <button type="button" class="chip-btn" data-value="₹25,000 / mo">₹25,000 / mo</button>
+                  <button type="button" class="chip-btn" data-value="₹30,000+ / mo">₹30,000+ / mo</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sell Expected Price Box -->
+            <div id="step-4-sell-box" style="display: none;">
+              <div class="form-group">
+                <label class="form-label" for="sell-expected-price">Expected Selling Price</label>
+                <input type="text" id="sell-expected-price" class="form-input" placeholder="e.g. ₹45 Lakh, ₹80 Lakh, Open to Market Valuation" />
+              </div>
+            </div>
+
+            <div class="wizard-nav-bar">
+              <button type="button" class="btn btn-outline btn-step-back">
+                <span>← Back</span>
+              </button>
+              <button type="button" class="btn btn-primary btn-step-next">
+                <span>Continue →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 5: Contact -->
+          <div class="wizard-step-pane" id="step-pane-5">
+            <h2 class="wizard-step-title">Almost done. Contact Details</h2>
+            <p class="wizard-step-desc">We will review your requirement and reach out directly.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="req-name">Your Full Name <span style="color: var(--gold-primary);">*</span></label>
+              <input type="text" id="req-name" class="form-input" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="req-mobile">Mobile Number <span style="color: var(--gold-primary);">*</span></label>
+              <input type="tel" id="req-mobile" class="form-input" placeholder="e.g. 9876543210" required />
+            </div>
+
+            <div class="form-group" id="whatsapp-group" style="display: none;">
+              <label class="form-label" for="req-whatsapp">WhatsApp Number</label>
+              <input type="tel" id="req-whatsapp" class="form-input" placeholder="WhatsApp Number" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-checkbox-label">
+                <input type="checkbox" id="same-whatsapp-check" checked />
+                <span>My WhatsApp number is the same as my mobile number.</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="req-notes">Additional Requirement / Preferences</label>
+              <textarea id="req-notes" class="form-textarea" placeholder="Anything else you would like us to know? (e.g. need parking, near college, family requirement, ready to move, prefer ground floor)..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Preferred Contact Method</label>
+              <div class="chips-group" id="pref-contact-chips">
+                <button type="button" class="chip-btn active" data-value="WhatsApp">WhatsApp</button>
+                <button type="button" class="chip-btn" data-value="Call">Phone Call</button>
+              </div>
+            </div>
+
+            <div class="wizard-nav-bar">
+              <button type="button" class="btn btn-outline btn-step-back">
+                <span>← Back</span>
+              </button>
+              <button type="submit" class="btn btn-gold btn-lg">
+                <span>Submit Requirement</span>
+              </button>
+            </div>
+
+            <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 14px;">
+              Your information is used only to assist with your property requirement.
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Success State Modal -->
+  <div class="modal-overlay" id="requirement-success-modal">
+    <div class="modal-card">
+      <div class="modal-icon-success">✓</div>
+      <h3 style="font-family: var(--font-serif); font-size: 1.5rem; text-align: center; margin-bottom: 8px;">Requirement Received</h3>
+      <p style="color: var(--text-secondary); text-align: center; font-size: 0.95rem; margin-bottom: 20px;">
+        Your requirement is ready to send directly to S. Meera Real Estate.
+      </p>
+
+      <div id="success-summary"></div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="#" id="btn-continue-whatsapp" target="_blank" rel="noopener" class="btn btn-wa btn-full btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.83.81 2.8.81 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.588-5.766-5.772-5.766zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.128-.52-1.706-.704-2.812-2.45-2.898-2.563-.086-.114-.686-.913-.686-1.742 0-.828.434-1.237.588-1.408.154-.171.341-.214.455-.214.114 0 .227.001.327.006.105.006.246-.04.385.294.144.346.491 1.198.533 1.284.043.086.071.186.014.3-.057.114-.085.185-.171.285-.085.1-.18.223-.257.3-.085.086-.174.179-.075.35.099.171.442.73 1.002 1.229.721.642 1.329.841 1.519.927.19.086.301.072.413-.057.114-.128.484-.563.613-.756.128-.192.257-.16.428-.096.171.064 1.082.51 1.267.603.185.093.308.139.353.217.045.078.045.452-.099.857z"/></svg>
+          <span>Continue on WhatsApp</span>
+        </a>
+        <a href="index.html" class="btn btn-outline btn-full">
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="S. Meera Real Estate" style="height: 40px; filter: brightness(0) invert(1);" />
+          <p>S. Meera Real Estate provides personal, relationship-led property guidance for buyers, sellers and tenants across Anand, Vidyanagar and nearby areas.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="requirements.html">Post Your Requirement</a>
+            <a href="about.html">About S. Meera</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-links">
+            <p style="color: var(--text-light); font-weight: 600; margin-bottom: 4px;">S. Meera Real Estate</p>
+            <p style="color: var(--text-light-muted); font-size: 0.88rem; margin-bottom: 8px;">Anand, Gujarat</p>
+            <a href="https://wa.me/919737035770" target="_blank" rel="noopener" style="color: var(--gold-primary); font-weight: 600;">WhatsApp: +91 97370 35770</a>
+            <a href="tel:+919737035770" style="color: var(--text-light-muted);">Call: +91 97370 35770</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span class="current-year"></span> S. Meera Real Estate. All rights reserved.</p>
+        <p style="color: var(--text-muted);">Serving Anand, Vallabh Vidyanagar & Nearby Areas</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/requirements.js"></script>
+</body>
+</html>

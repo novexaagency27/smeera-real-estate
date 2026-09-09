@@ -1,0 +1,199 @@
+/* ==========================================================================
+   S. MEERA REAL ESTATE — DESIGN SYSTEM
+   Aesthetic: Warm Ivory, Soft Beige, Charcoal, Muted Champagne Gold Accent
+   Focus: Simple, Premium, Local, Mobile-First
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-main: #FAF8F5;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F3EFE7;
+  --bg-warm: #EFE9DE;
+  --bg-dark: #19221E;
+  --bg-dark-surface: #222B27;
+
+  /* Typography Colors */
+  --text-primary: #1A221E;
+  --text-secondary: #4F5752;
+  --text-muted: #78807A;
+  --text-light: #F7F5F0;
+  --text-light-muted: #B8BFB9;
+
+  /* Accent Gold (Restrained Accent Only) */
+  --gold-primary: #B88A28;
+  --gold-hover: #9E741D;
+  --gold-light: #F7F1E1;
+  --gold-border: #DBC89E;
+
+  /* WhatsApp Green */
+  --wa-green: #25D366;
+  --wa-hover: #1EBE5D;
+
+  /* UI Borders & Lines */
+  --border-light: #EBE5D8;
+  --border-medium: #D8D1C2;
+  --border-dark: #2F3934;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Shadows (Subtle, Not Excessive) */
+  --shadow-sm: 0 2px 6px rgba(25, 34, 30, 0.04);
+  --shadow-md: 0 6px 18px rgba(25, 34, 30, 0.07);
+  --shadow-lg: 0 12px 30px rgba(25, 34, 30, 0.09);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+}
+
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 4vw, 24px);
+  padding-right: clamp(16px, 4vw, 24px);
+}
+
+/* Sections */
+.section {
+  padding-top: clamp(40px, 6vw, 72px);
+  padding-bottom: clamp(40px, 6vw, 72px);
+}
+
+.section-sm {
+  padding-top: clamp(28px, 4vw, 44px);
+  padding-bottom: clamp(28px, 4vw, 44px);
+}
+
+/* Section Headings */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 3.2vw, 2.6rem);
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--gold-primary);
+  font-weight: 500;
+}
+
+.section-subtitle {
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+.section-header-center {
+  text-align: center;
+  margin-bottom: clamp(28px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header-left {
+  margin-bottom: clamp(24px, 4vw, 40px);
+}
